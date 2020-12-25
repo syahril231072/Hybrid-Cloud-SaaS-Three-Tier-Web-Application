@@ -53,6 +53,4 @@ The IT manager has worked with the Information Security team and negotiated a se
 Allow SSH (TCP port 22) access from any IP address for all services
 Allow HTTP and HTTPS (TCP port 80 and 443) access from any IP address for the web service and Load Balancer
 Allow MySQL (TCP port 3306) database access from any IP address for the database service
-Please create and test the blueprint. You may be able to adapt your blueprint from the course with changes to fit the project requirements, or you may want to start from scratch; either approach is acceptable.
 
-Be sure to save your blueprint to your Udacity workspace before leaving a lab session!
