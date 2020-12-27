@@ -4,7 +4,7 @@ This project is to create three tier web application (HA Proxy, WebServer and Da
 
 ![](bertlesman2.png)
 
-After speaking to management in the software engineering release, I learn the business requirements are to provide a pilot self-service, three tier web application using The E-Commerce Company’s standards. In order to provide business continuity and performance scalability past the Nutanix2 Project, multiple infrastructure providers are required for the web tier. The requirements have grown to incorporate a hybrid deployment model using private and public cloud, additional SaaS-like functionality for database backup and restoral, as well deployment resource size choices to help the developers become self-sufficient for different development and test workloads and common IT requests.
+After speaking to management in the software engineering release, I learn the business requirements are to provide a pilot self-service, three tier web application using The E-Commerce Company’s standards. In order to provide business continuity and performance scalability past the Private Cloud SaaS: Three Tier Web Application Project, multiple infrastructure providers are required for the web tier. The requirements have grown to incorporate a hybrid deployment model using private and public cloud, additional SaaS-like functionality for database backup and restoral, as well deployment resource size choices to help the developers become self-sufficient for different development and test workloads and common IT requests.
 
 The three tiers of the web application are:
 
