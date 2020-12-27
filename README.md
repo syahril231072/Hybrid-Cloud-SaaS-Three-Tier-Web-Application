@@ -1,9 +1,10 @@
 # Hybrid-Cloud-SaaS-Three-Tier-Web-Application
 
 This project is to create three tier web application (HA Proxy, WebServer and Database)
+
 ![](bertlesman2.png)
 
-After speaking to management in the software engineering release, you learn the business requirements are to provide a pilot self-service, three tier web application using The E-Commerce Company’s standards. In order to provide business continuity and performance scalability past the Course 2 Project, multiple infrastructure providers are required for the web tier. The requirements have grown to incorporate a hybrid deployment model using private and public cloud, additional SaaS-like functionality for database backup and restoral, as well deployment resource size choices to help the developers become self-sufficient for different development and test workloads and common IT requests.
+After speaking to management in the software engineering release, you learn the business requirements are to provide a pilot self-service, three tier web application using The E-Commerce Company’s standards. In order to provide business continuity and performance scalability past the Nutanix2 Project, multiple infrastructure providers are required for the web tier. The requirements have grown to incorporate a hybrid deployment model using private and public cloud, additional SaaS-like functionality for database backup and restoral, as well deployment resource size choices to help the developers become self-sufficient for different development and test workloads and common IT requests.
 
 The three tiers of the web application are:
 
@@ -33,6 +34,7 @@ t2.micro on AWS public cloud
 Web tier VM starts at 1 replica and can scale to a maximum of 2, all others services cannot scale.
 
 Medium:
+
 2vCPUs, 2 cores, 1GB RAM on private cloud
 t2.micro on AWS public cloud
 Web tier VM starts at 2 replicas and can scale to a maximum of 4, all others services cannot scale.
