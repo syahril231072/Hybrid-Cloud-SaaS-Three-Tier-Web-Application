@@ -1,5 +1,8 @@
 # Hybrid-Cloud-SaaS-Three-Tier-Web-Application
 
+This project is to create three tier web application (HA Proxy, WebServer and Database)
+![](bertlesman2.png)
+
 After speaking to management in the software engineering release, you learn the business requirements are to provide a pilot self-service, three tier web application using The E-Commerce Company’s standards. In order to provide business continuity and performance scalability past the Course 2 Project, multiple infrastructure providers are required for the web tier. The requirements have grown to incorporate a hybrid deployment model using private and public cloud, additional SaaS-like functionality for database backup and restoral, as well deployment resource size choices to help the developers become self-sufficient for different development and test workloads and common IT requests.
 
 The three tiers of the web application are:
@@ -14,6 +17,7 @@ Use the CentOS 8 cloud image for private cloud VMs located in the CentOS image r
 For public cloud VMs, use the AWS Linux free tier option in your region, which currently in us-west-2 is "Red Hat Enterprise Linux 8 (HVM), SSD Volume Type - ami-02f147dfb8be58a10 (64-bit x86)"
 Create and use the teccadmin account to configure the OS and install software.
 All VM accounts require using SSH access and can be granted sudo privileges.
+
 The IT manager has already worked with the Software Release and Database Administration manager and negotiated the following developer requirements for the application environment:
 The load balancer VM will be a monolith for this project and use the latest HAProxy software included with the OS
 The load balancer will be hosted on the private cloud
@@ -21,23 +25,29 @@ The web tier will use Apache web server and use the latest version of httpd soft
 For the hybrid cloud: there should be a web tier hosted on the private cloud and the public cloud
 The web tier VMs should be named wwwX, where X is a number. E.g: www0, www1, www2, etc.
 There will be two deployment scenarios, name each as follows and use the same VM resource sizes for all services:
+
 Small:
+
 1 vCPU, 1 core, 1GB RAM on private cloud
 t2.micro on AWS public cloud
 Web tier VM starts at 1 replica and can scale to a maximum of 2, all others services cannot scale.
+
 Medium:
 2vCPUs, 2 cores, 1GB RAM on private cloud
 t2.micro on AWS public cloud
 Web tier VM starts at 2 replicas and can scale to a maximum of 4, all others services cannot scale.
+
 No VM resource parameters can be changed by the end user
 The developer should be able to manually scale the either provider’s web tier independently in and out by one VM at a time and the load balancer must use the updated hybrid web tier population
 After deployment, a developer can perform a database backup or a database restoral operation at any time
+
 The Database Administrator manager states that all database VMs must:
 The database VM will be a monolith for this project and use MySQL, latest version 8.x software
 Create and use the teccdba account to configure the database password and structure
 Alter the root database account password to a user provided password at launch
 The test web application database should be named webapp and the table should be named tecc_dba_test and a user account tecc_webuser should be granted access to the database and share the root password
 The database will be hosted on the public cloud and should allow database access from the public and private cloud web tier hosts
+
 The Software Release manager requires the environment to pass a test to ensure the configuration works for a developer:
 The web app should be installed to the standard web docroot
 Web app should use the database tecc_webuser user account and provided root password
